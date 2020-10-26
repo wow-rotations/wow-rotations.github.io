@@ -16,7 +16,6 @@ export default class AppRoot extends React.Component {
             <Suspense fallback={<div>Loading...</div>}>
                 <Switch>
                     <Route exact path="/" component={WowRotations}/>
-                    <Route exact path="/wow" component={Main}/>
                     <Route render={() => <h1>404: page not found</h1>}/>
                     {/*<Route path="/about" component={About}/>*/}
                 </Switch>
