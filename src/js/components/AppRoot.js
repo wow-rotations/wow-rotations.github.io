@@ -1,4 +1,3 @@
-import Main from "../routes/Main";
 import React, {Suspense, lazy} from 'react';
 import {BrowserRouter as Router, Route, Link, Redirect, Switch, browserHistory} from "react-router-dom";
 import WowRotations from "../routes/WowRotations";

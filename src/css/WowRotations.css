@@ -8,6 +8,8 @@
     display: inline-block;
     padding: 0.5vw;
     filter: saturate(100%);
+    min-width: 80px;
+    min-height: 80px;
 }
 
 .playerClassContainer.enabled:hover {

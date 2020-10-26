@@ -8,7 +8,7 @@ export default class WowRotations extends React.Component {
         super(props);
         this.state = {
             classes: [
-                {key: "deathKnight", name: "Death Knight", enabled: true},
+                {key: "deathKnight", name: "Death Knight", enabled: false},
                 {key: "demonHunter", name: "Demon Hunter", enabled: false},
                 {key: "druid", name: "Druid", enabled: false},
                 {key: "hunter", name: "Hunter", enabled: false},
@@ -109,14 +109,14 @@ export default class WowRotations extends React.Component {
         if (this.state.selectedClass && this.state.selectedClassProfile) {
             return <div className={"classContent"}>
                 <h2>{this.state.selectedClass.name}</h2>
-                <div className={"globalButtonContainer"}>
-                    <div className={"button"} onClick={() => this.handle_CopyTextAreaToClipboard("globalGroups")}>
-                        Global Groups
-                    </div>
-                    <div className={"button"} onClick={() => this.handle_CopyTextAreaToClipboard("globalLua")}>
-                        Lua Functions
-                    </div>
-                </div>
+                {/*<div className={"globalButtonContainer"}>*/}
+                {/*    <div className={"button"} onClick={() => this.handle_CopyTextAreaToClipboard("globalGroups")}>*/}
+                {/*        Global Groups*/}
+                {/*    </div>*/}
+                {/*    <div className={"button"} onClick={() => this.handle_CopyTextAreaToClipboard("globalLua")}>*/}
+                {/*        Lua Functions*/}
+                {/*    </div>*/}
+                {/*</div>*/}
                 <div className={"button"} onClick={() => this.handle_CopyTextAreaToClipboard("rotationString")}>
                     Rotation
                 </div>
