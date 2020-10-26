@@ -8,7 +8,7 @@ export default class WowRotations extends React.Component {
         super(props);
         this.state = {
             classes: [
-                {key: "deathKnight", name: "Death Knight", enabled: false},
+                {key: "deathKnight", name: "Death Knight", enabled: true},
                 {key: "demonHunter", name: "Demon Hunter", enabled: false},
                 {key: "druid", name: "Druid", enabled: false},
                 {key: "hunter", name: "Hunter", enabled: false},
@@ -17,7 +17,7 @@ export default class WowRotations extends React.Component {
                 {key: "paladin", name: "Paladin", enabled: false},
                 {key: "priest", name: "Priest", enabled: false},
                 {key: "rogue", name: "Rogue", enabled: true},
-                {key: "shaman", name: "Shaman", enabled: false},
+                {key: "shaman", name: "Shaman", enabled: true},
                 {key: "warlock", name: "Warlock", enabled: false},
                 {key: "warrior", name: "Warrior", enabled: false},
             ],
@@ -44,7 +44,6 @@ export default class WowRotations extends React.Component {
 
     handle_ClickedClass(clickedClass) {
         let self = this;
-        console.log("handle_ClickedClass", clickedClass)
         this.setState({
             selectedClass: clickedClass,
             selectedClassProfile: undefined,
