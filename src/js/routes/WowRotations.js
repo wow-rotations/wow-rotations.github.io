@@ -12,7 +12,7 @@ export default class WowRotations extends React.Component {
                 {key: "demonHunter", name: "Demon Hunter", enabled: true},
                 {key: "druid", name: "Druid", enabled: true},
                 {key: "hunter", name: "Hunter", enabled: true},
-                {key: "mage", name: "Mage", enabled: false},
+                {key: "mage", name: "Mage", enabled: true},
                 {key: "monk", name: "Monk", enabled: true},
                 {key: "paladin", name: "Paladin", enabled: true},
                 {key: "priest", name: "Priest", enabled: true},
