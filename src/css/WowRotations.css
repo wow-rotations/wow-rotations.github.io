@@ -52,7 +52,7 @@
     border: 1px solid #999999;
     text-align: center;
     min-width: 150px;
-    width: fit-content;
+    width: min-content;
     padding: 5px;
     cursor: pointer;
     user-select: none;
@@ -68,13 +68,13 @@
 
 .globalButtonContainer {
     border: 1px solid red;
-    width: fit-content;
+    width: min-content;
     padding: 0 10px 10px 10px;
 }
 
 .classContent {
     margin: auto;
-    width: fit-content;
+    width: min-content;
     text-align: center;
 }
 
