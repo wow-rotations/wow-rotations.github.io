@@ -3,13 +3,13 @@
 }
 
 .playerClassContainer {
-    width: calc((100vw / 12));
-    height: calc((100vw / 12));
-    display: inline-block;
+    width: calc((100vw / 12) - 0.13vw);
+    height: calc((100vw / 12) - 0.13vw);
     padding: 0.5vw;
     filter: saturate(100%);
     min-width: 80px;
     min-height: 80px;
+    float: left;
 }
 
 .playerClassContainer.enabled:hover {
@@ -72,12 +72,3 @@
     padding: 0 10px 10px 10px;
 }
 
-.classContent {
-    margin: auto;
-    width: min-content;
-    text-align: center;
-}
-
-.classContent .button {
-    margin: 10px auto 0 auto;
-}

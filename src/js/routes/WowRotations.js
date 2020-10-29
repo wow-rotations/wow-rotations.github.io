@@ -1,6 +1,8 @@
 import "../../css/WowRotations.css"
 
 import React from "react";
+import ClassSection from "../components/ClassSection";
+import ClassSelectionHeader from "../components/ClassSelectionHeader";
 
 
 export default class WowRotations extends React.Component {
@@ -28,20 +30,6 @@ export default class WowRotations extends React.Component {
         }
     }
 
-    componentDidMount() {
-        let self = this;
-        $.getJSON('/src/static/TmwProfiles/global/groups.json', function (data) {
-            self.setState({
-                globalGroups: data,
-            })
-        });
-        $.getJSON('/src/static/TmwProfiles/global/lua.json', function (data) {
-            self.setState({
-                globalLUA: data,
-            })
-        });
-    }
-
     handle_ClickedClass(clickedClass) {
         let self = this;
         this.setState({
@@ -56,78 +44,16 @@ export default class WowRotations extends React.Component {
         })
     }
 
-    handle_CopyTextAreaToClipboard(componentId) {
-        let textArea = document.getElementById(componentId)
-        textArea.select();
-        textArea.setSelectionRange(0, 99999);
-        document.execCommand("copy");
-        console.log("handle_CopyClassProfileToClipboard", textArea);
-
-    }
-
-    renderClassHeader() {
-        let ret = []
-        for (let playerClass of this.state.classes) {
-            let enabled = playerClass.enabled ? "enabled" : "disabled"
-            let isSelected = this.state.selectedClass === playerClass ? "selected" : ""
-            ret.push(<div className={"playerClassContainer " + enabled + " " + isSelected}
-                          onClick={() => this.handle_ClickedClass(playerClass)}
-                          key={playerClass.key}>
-                    <div className={"playerClass"}
-                         style={{"background": "url(\"/src/static/images/wow/class/" + playerClass.key + ".png\") no-repeat center center / cover"}}/>
-                </div>
-            )
-        }
-        return <div className={"classHeader"}>{ret}</div>
-    }
-
-    renderTextAreas() {
-        return [
-            <textarea
-                id={"globalGroups"}
-                key={"globalGroups"}
-                className={"hiddenTextArea"}
-                readOnly={true}
-                value={this.state.globalGroups.string}/>,
-            <textarea
-                id={"globalLua"}
-                key={"globalLua"}
-                className={"hiddenTextArea"}
-                readOnly={true}
-                value={this.state.globalLUA.string}/>,
-            <textarea
-                id={"rotationString"}
-                key={"rotationString"}
-                className={"hiddenTextArea"}
-                readOnly={true}
-                value={this.state.selectedClassProfile.string}/>
-        ]
-    }
-
-    renderClassContent() {
-        if (this.state.selectedClass && this.state.selectedClassProfile) {
-            return <div className={"classContent"}>
-                <h2>{this.state.selectedClass.name}</h2>
-                {/*<div className={"globalButtonContainer"}>*/}
-                {/*    <div className={"button"} onClick={() => this.handle_CopyTextAreaToClipboard("globalGroups")}>*/}
-                {/*        Global Groups*/}
-                {/*    </div>*/}
-                {/*    <div className={"button"} onClick={() => this.handle_CopyTextAreaToClipboard("globalLua")}>*/}
-                {/*        Lua Functions*/}
-                {/*    </div>*/}
-                {/*</div>*/}
-                <div className={"button"} onClick={() => this.handle_CopyTextAreaToClipboard("rotationString")}>
-                    Rotation
-                </div>
-                {this.renderTextAreas()}
-            </div>
-        }
-    }
-
     render() {
         return <div>
-            {this.renderClassHeader()}
-            {this.renderClassContent()}
+            <ClassSelectionHeader
+                classes={this.state.classes}
+                selected={this.state.selectedClass}
+                callback={this.handle_ClickedClass.bind(this)}
+            />
+            <ClassSection
+                classProfile={this.state.selectedClassProfile}
+            />
         </div>
     }
 }

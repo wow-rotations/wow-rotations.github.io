@@ -1,0 +1,10 @@
+.classContent {
+    margin: auto;
+    /*width: min-content;*/
+    text-align: center;
+    clear: left;
+}
+
+.classContent .button {
+    margin: 10px auto 0 auto;
+}
