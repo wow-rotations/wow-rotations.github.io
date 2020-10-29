@@ -15,6 +15,7 @@ export default class ClassSection extends React.Component {
         if (this.props.classProfile) {
             return <div className={"classContent"}>
                 <h2>{this.props.classProfile.label}</h2>
+                <h2>ver. {this.props.classProfile.version}</h2>
                 <RotationPreview classProfile={this.props.classProfile}/>
                 <div className={"button"} onClick={() => this.handle_CopyTextAreaToClipboard("rotationString")}>
                     Rotation
