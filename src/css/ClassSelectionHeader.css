@@ -1,0 +1,46 @@
+.classHeader {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100px;
+}
+
+.playerClassContainer {
+    width: calc((100vw / 12) - 0.13vw);
+    height: calc((100vw / 12) - 0.13vw);
+    padding: 0.5vw;
+    filter: saturate(100%);
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.playerClassContainer.enabled:hover {
+    cursor: pointer;
+    filter: saturate(500%);
+    padding: 0;
+}
+
+.playerClassContainer.enabled.selected:hover {
+    padding-bottom: -2px;
+}
+
+.playerClassContainer.disabled {
+    cursor: default;
+    filter: saturate(0) brightness(50%);
+}
+
+.playerClassContainer.enabled.selected {
+    border-bottom: 2px solid;
+    padding-bottom: calc(0.5vw - 2px);
+    border-color: orange;
+}
+
+.playerClassContainer.enabled.selected .playerClass {
+    margin-top: 2px;
+}
+
+.playerClass {
+    width: 100%;
+    height: 100%;
+}

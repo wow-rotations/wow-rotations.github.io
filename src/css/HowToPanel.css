@@ -1,0 +1,12 @@
+.HowToImage {
+    max-width: 80vw;
+}
+
+.HowToPanel {
+    justify-content: center;
+    display: grid;
+}
+
+.HowToInnerPanel {
+    max-width: 80vw;
+}

@@ -3,6 +3,7 @@ import "../../css/WowRotations.css"
 import React from "react";
 import ClassSection from "../components/ClassSection";
 import ClassSelectionHeader from "../components/ClassSelectionHeader";
+import HowToPanel from "../components/HowToPanel";
 
 
 export default class WowRotations extends React.Component {
@@ -36,11 +37,17 @@ export default class WowRotations extends React.Component {
             selectedClass: clickedClass,
             selectedClassProfile: undefined,
         }, () => {
-            $.getJSON('/src/static/TmwProfiles/' + this.state.selectedClass.key + '/rotation.json', function (data) {
-                self.setState({
-                    selectedClassProfile: data,
-                })
-            });
+            $.ajax({
+                type: 'GET',
+                url: '/src/static/TmwProfiles/' + this.state.selectedClass.key + '/rotation.json',
+                success: function (data, textStatus, request) {
+                    let lastModified = request.getResponseHeader("last-modified")
+                    data.lastModified = lastModified
+                    self.setState({
+                        selectedClassProfile: data,
+                    })
+                }
+            })
         })
     }
 
@@ -51,9 +58,11 @@ export default class WowRotations extends React.Component {
                 selected={this.state.selectedClass}
                 callback={this.handle_ClickedClass.bind(this)}
             />
-            <ClassSection
-                classProfile={this.state.selectedClassProfile}
-            />
+            <div className={"contentPanel"}>
+                {this.state.selectedClass
+                    ? <ClassSection classProfile={this.state.selectedClassProfile}/>
+                    : <HowToPanel/>}
+            </div>
         </div>
     }
 }

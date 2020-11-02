@@ -1,3 +1,5 @@
+import "../../css/ClassSelectionHeader.css"
+
 import React from "react";
 
 export default class ClassSelectionHeader extends React.Component {

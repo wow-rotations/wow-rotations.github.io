@@ -1,0 +1,53 @@
+.profileButton {
+    margin: 10px auto 0 auto;
+    /*background: grey;*/
+    width: min-content;
+    /*!*padding: 10px;*!*/
+    /*border-radius: 5px;*/
+    display: flex;
+    /*font-size: 18px;*/
+    /*line-height: 18px;*/
+    /*font-weight: bolder;*/
+}
+
+.profileButton .version {
+    border: 1px solid;
+    border-radius: 5px 0 0 5px;
+    width: 100px;
+    padding: 10px;
+    background: gray;
+    font-size: 18px;
+    font-weight: bolder;
+    /*margin: auto;*/
+}
+
+.profileButton .clipboardIcon {
+    border: 1px solid;
+    border-radius: 0 5px 5px 0;
+    width: min-content;
+    padding: 10px;
+    background: gray;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.profileButton .clipboardIcon:hover {
+    background-color: #999999;
+    font-size: 20px;
+    padding: 9px;
+}
+
+.profileButton .clipboardIcon:active {
+    background-color: #666666;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.contextLabel {
+    position: absolute;
+    font-size: 10px;
+    color: #5a5a5a;
+    margin-top: 20px;
+    text-align: center;
+    width: 80px;
+}
