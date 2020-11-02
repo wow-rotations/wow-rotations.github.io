@@ -9,6 +9,8 @@
     filter: saturate(100%);
     min-width: 80px;
     min-height: 80px;
+    max-width: 100px;
+    max-height: 100px;
     float: left;
 }
 
