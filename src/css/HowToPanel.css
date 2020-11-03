@@ -1,5 +1,20 @@
 .HowToImage {
     max-width: 80vw;
+    max-height: 80vh;
+}
+
+.image-small {
+    max-width: 80vw;
+    max-height: 80vh;
+    cursor:pointer
+}
+
+.image-dialog {
+    position: absolute;
+    margin-top: -50%;
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 5px;
 }
 
 .HowToPanel {
@@ -7,6 +22,18 @@
     display: grid;
 }
 
+.closeButton {
+    position: absolute;
+    top: 0;
+    right: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
 .HowToInnerPanel {
-    max-width: 80vw;
+    max-width: 90vw;
+    border-radius: 5px;
+    padding: 0 5vw;
+    background-color: #1c1c1c;
+    color: #999999;
 }
