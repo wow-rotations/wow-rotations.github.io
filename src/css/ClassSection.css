@@ -8,3 +8,23 @@
 .classContent .button {
     margin: 10px auto 0 auto;
 }
+
+.homeButton {
+    position: absolute;
+    font-size: 40px;
+    margin-left: 10px;
+    margin-top: -15px;
+    cursor: pointer;
+}
+
+.homeButton:hover {
+    font-size: 46px;
+    margin-left: 9px;
+    margin-top: -20px;
+}
+
+.homeButton:active {
+    font-size: 34px;
+    margin-left: 11px;
+    margin-top: -10px;
+}

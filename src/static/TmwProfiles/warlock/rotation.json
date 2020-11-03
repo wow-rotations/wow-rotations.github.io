@@ -5,14 +5,17 @@
   "previews": [
     {
       "spec": "Affliction",
+      "guide": "https://www.icy-veins.com/wow/affliction-warlock-pve-dps-guide",
       "previewFile": "affliction.m4v"
     },
     {
       "spec": "Demonology",
+      "guide": "https://www.icy-veins.com/wow/demonology-warlock-pve-dps-guide",
       "previewFile": "demonology.m4v"
     },
     {
       "spec": "Destruction",
+      "guide": "https://www.icy-veins.com/wow/destruction-warlock-pve-dps-guide",
       "previewFile": "destruction.m4v"
     }
   ],

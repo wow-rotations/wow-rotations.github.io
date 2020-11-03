@@ -5,14 +5,17 @@
   "previews": [
     {
       "spec": "Assassination",
+      "guide": "https://www.icy-veins.com/wow/assassination-rogue-pve-dps-guide",
       "previewFile": "assassination.m4v"
     },
     {
       "spec": "Combat",
+      "guide": "https://www.icy-veins.com/wow/outlaw-rogue-pve-dps-guide",
       "previewFile": "combat.m4v"
     },
     {
       "spec": "Subtlety",
+      "guide": "https://www.icy-veins.com/wow/subtlety-rogue-pve-dps-guide",
       "previewFile": "subtlety.m4v"
     }
   ],

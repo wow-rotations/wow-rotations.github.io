@@ -5,10 +5,12 @@
   "previews": [
     {
       "spec": "Protection",
+      "guide": "https://www.icy-veins.com/wow/protection-paladin-pve-tank-guide",
       "previewFile": "protection.m4v"
     },
     {
       "spec": "Retribution",
+      "guide": "https://www.icy-veins.com/wow/retribution-paladin-pve-dps-guide",
       "previewFile": "retribution.m4v"
     }
   ],

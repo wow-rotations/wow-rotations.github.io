@@ -5,10 +5,12 @@
   "previews": [
     {
       "spec": "Elemental",
+      "guide": "https://www.icy-veins.com/wow/elemental-shaman-pve-dps-guide",
       "previewFile": "elemental.m4v"
     },
     {
       "spec": "Enhancement",
+      "guide": "https://www.icy-veins.com/wow/enhancement-shaman-pve-dps-guide",
       "previewFile": "enhancement.m4v"
     }
   ],

@@ -1,8 +1,37 @@
-.SpecPreviewContainer video{
+.SpecPreviewContainer video {
     width: 100%;
-    max-height:180px
+    max-height: 180px
 }
 
-.SpecPreviewContainer{
+.SpecPreviewContainer {
     padding: 10px;
+}
+
+.SpecHeader{
+    height: 50px;
+}
+
+.logoContainer {
+    display: inline;
+    position: absolute;
+    cursor: pointer;
+}
+
+.logo {
+    height: 30px;
+    margin-left: 10px;
+    margin-top: -3px;
+    cursor: pointer;
+}
+
+.logo:hover {
+    height: 32px;
+    margin-left: 9px;
+    margin-top: -4px;
+}
+
+.logo:active {
+    height: 28px;
+    margin-left: 11px;
+    margin-top: -2px;
 }

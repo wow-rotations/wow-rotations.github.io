@@ -5,14 +5,17 @@
   "previews": [
     {
       "spec": "Arcane",
+      "guide": "https://www.icy-veins.com/wow/arcane-mage-pve-dps-guide",
       "previewFile": "arcane.m4v"
     },
     {
       "spec": "Fire",
+      "guide": "https://www.icy-veins.com/wow/fire-mage-pve-dps-guide",
       "previewFile": "fire.m4v"
     },
     {
       "spec": "Frost",
+      "guide": "https://www.icy-veins.com/wow/frost-mage-pve-dps-guide",
       "previewFile": "frost.m4v"
     }
   ],

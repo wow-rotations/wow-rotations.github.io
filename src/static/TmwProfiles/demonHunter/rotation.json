@@ -5,10 +5,12 @@
   "previews": [
     {
       "spec": "Havoc",
+      "guide": "https://www.icy-veins.com/wow/havoc-demon-hunter-pve-dps-guide",
       "previewFile": "havoc.m4v"
     },
     {
       "spec": "Vengeance",
+      "guide": "https://www.icy-veins.com/wow/vengeance-demon-hunter-pve-tank-guide",
       "previewFile": "vengeance.m4v"
     }
   ],

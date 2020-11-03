@@ -10,7 +10,9 @@ export default class ClassSelectionHeader extends React.Component {
             let isSelected = this.props.selected === playerClass ? "selected" : ""
             ret.push(<div className={"playerClassContainer " + enabled + " " + isSelected}
                           onClick={() => this.props.callback(playerClass)}
-                          key={playerClass.key}>
+                          key={playerClass.key}
+                          style={isSelected ? {"borderColor":this.props.selected.color} : {}}
+                >
                     <div className={"playerClass"}
                          style={{"background": "url(\"/src/static/images/wow/class/" + playerClass.key + ".png\") no-repeat center center / cover"}}/>
                 </div>

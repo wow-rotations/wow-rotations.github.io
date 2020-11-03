@@ -5,14 +5,17 @@
   "previews": [
     {
       "spec": "Arms",
+      "guide": "https://www.icy-veins.com/wow/arms-warrior-pve-dps-guide",
       "previewFile": "arms.m4v"
     },
     {
       "spec": "Fury",
+      "guide": "https://www.icy-veins.com/wow/fury-warrior-pve-dps-guide",
       "previewFile": "fury.m4v"
     },
     {
       "spec": "Protection",
+      "guide": "https://www.icy-veins.com/wow/protection-warrior-pve-tank-guide",
       "previewFile": "protection.m4v"
     }
   ],

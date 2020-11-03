@@ -5,10 +5,12 @@
   "previews": [
     {
       "spec": "Brewmaster",
+      "guide": "https://www.icy-veins.com/wow/brewmaster-monk-pve-tank-guide",
       "previewFile": "brewmaster.m4v"
     },
     {
       "spec": "Windwalker",
+      "guide": "https://www.icy-veins.com/wow/windwalker-monk-pve-dps-guide",
       "previewFile": "windwalker.m4v"
     }
   ],

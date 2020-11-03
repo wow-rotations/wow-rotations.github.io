@@ -9,7 +9,7 @@ export default class RotationPreview extends React.Component {
         for (let preview of this.props.classProfile.previews) {
             ret.push(<SpecPreview
                 key={preview.spec}
-                label={preview.spec}
+                spec={preview}
                 width={"calc(100vw/" + this.props.classProfile.previews.length + ")"}
                 src={'/src/static/TmwProfiles/' + this.props.classProfile.key + '/' + preview.previewFile}
             />)

@@ -1,20 +1,33 @@
-import "../../css/ClassProfileButton.css"
+import "../../css/ClassProfileButton.css";
+
 import React from "react";
 import moment from "moment";
+import ReactTooltip from "react-tooltip";
 
 export default class ClassProfileButton extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            showLastModified: true
+            showLastModified: true,
+            copySuccess: false
         }
     }
 
-    handle_CopyTextAreaToClipboard(componentId) {
+
+    handle_CopyTextAreaToClipboard = (componentId) => {
         let textArea = document.getElementById(componentId)
         textArea.select();
         textArea.setSelectionRange(0, 99999);
         document.execCommand("copy");
+        this.setState({
+            copySuccess: true,
+        }, () => {
+            ReactTooltip.hide();
+            ReactTooltip.show(document.getElementById("clipboardIcon"));
+            this.setState({
+                copySuccess: false
+            })
+        })
     }
 
     render_version = () => {
@@ -47,15 +60,29 @@ export default class ClassProfileButton extends React.Component {
             >
                 {this.render_version()}
             </div>
-            <div className={"clipboardIcon"}
-                 onClick={() => this.handle_CopyTextAreaToClipboard("rotationString")}>
-                <i className="fas fa-clipboard"/>
+            <div
+                id={"clipboardIcon"}
+                className={"clipboardIconContainer"}
+                onClick={() => this.handle_CopyTextAreaToClipboard("rotationString")}
+                onMouseEnter={() => this.setState({tooltipVisible: true})}
+                onMouseLeave={() => this.setState({tooltipVisible: false})}
+                data-tip={this.state.copySuccess ? "Success!" : "Click to Copy"}
+            >
+                <div className={"clipboardIcon"}>
+                    <i className="fas fa-clipboard"/>
+                </div>
             </div>
         </div>
     }
 
     render() {
         return <div>
+            <ReactTooltip
+                effect={"solid"}
+                place={"right"}
+                type={this.state.copySuccess ? "success" : "dark"}
+                clickable={true}
+            />
             {this.renderButton()}
             <textarea
                 id={"rotationString"}

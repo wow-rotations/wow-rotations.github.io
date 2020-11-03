@@ -5,14 +5,17 @@
   "previews": [
     {
       "spec": "Blood",
+      "guide": "https://www.icy-veins.com/wow/blood-death-knight-pve-tank-guide",
       "previewFile": "blood.m4v"
     },
     {
       "spec": "Frost",
+      "guide": "https://www.icy-veins.com/wow/frost-death-knight-pve-dps-guide",
       "previewFile": "frost.m4v"
     },
     {
       "spec": "Unholy",
+      "guide": "https://www.icy-veins.com/wow/unholy-death-knight-pve-dps-guide",
       "previewFile": "unholy.m4v"
     }
   ],

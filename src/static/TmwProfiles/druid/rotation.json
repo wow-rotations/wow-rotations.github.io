@@ -5,14 +5,17 @@
   "previews": [
     {
       "spec": "Balance",
+      "guide": "https://www.icy-veins.com/wow/balance-druid-pve-dps-guide",
       "previewFile": "balance.m4v"
     },
     {
       "spec": "Feral",
+      "guide": "https://www.icy-veins.com/wow/feral-druid-pve-dps-guide",
       "previewFile": "feral.m4v"
     },
     {
       "spec": "Guardian",
+      "guide": "https://www.icy-veins.com/wow/guardian-druid-pve-tank-guide",
       "previewFile": "guardian.m4v"
     }
   ],

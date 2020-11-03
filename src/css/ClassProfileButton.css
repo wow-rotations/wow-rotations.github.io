@@ -1,13 +1,8 @@
 .profileButton {
     margin: 10px auto 0 auto;
-    /*background: grey;*/
     width: min-content;
-    /*!*padding: 10px;*!*/
-    /*border-radius: 5px;*/
     display: flex;
-    /*font-size: 18px;*/
-    /*line-height: 18px;*/
-    /*font-weight: bolder;*/
+    color: black;
 }
 
 .profileButton .version {
@@ -18,29 +13,38 @@
     background: gray;
     font-size: 18px;
     font-weight: bolder;
-    /*margin: auto;*/
+    cursor: default;
 }
 
-.profileButton .clipboardIcon {
+.profileButton .clipboardIconContainer {
     border: 1px solid;
     border-radius: 0 5px 5px 0;
-    width: min-content;
-    padding: 10px;
     background: gray;
-    font-size: 18px;
-    font-weight: bolder;
+    width: 40px;
+    cursor: pointer;
 }
 
-.profileButton .clipboardIcon:hover {
+.profileButton .clipboardIconContainer:hover {
     background-color: #999999;
-    font-size: 20px;
-    padding: 9px;
 }
 
-.profileButton .clipboardIcon:active {
+.profileButton .clipboardIconContainer:active {
     background-color: #666666;
+}
+
+.profileButton .clipboardIconContainer .clipboardIcon {
+    margin-top: 10px;
     font-size: 18px;
-    padding: 10px;
+}
+
+.profileButton .clipboardIconContainer:hover .clipboardIcon {
+    margin-top: 9px;
+    font-size: 20px;
+}
+
+.profileButton .clipboardIconContainer:active .clipboardIcon {
+    margin-top: 11px;
+    font-size: 16px;
 }
 
 .contextLabel {

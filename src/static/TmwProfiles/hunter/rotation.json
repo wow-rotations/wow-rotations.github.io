@@ -5,14 +5,17 @@
   "previews": [
     {
       "spec": "Beast Mastery",
+      "guide": "https://www.icy-veins.com/wow/beast-mastery-hunter-pve-dps-guide",
       "previewFile": "beastmastery.m4v"
     },
     {
       "spec": "Marksmanship",
+      "guide": "https://www.icy-veins.com/wow/marksmanship-hunter-pve-dps-guide",
       "previewFile": "marksman.m4v"
     },
     {
       "spec": "Survival",
+      "guide": "https://www.icy-veins.com/wow/survival-hunter-pve-dps-guide",
       "previewFile": "survival.m4v"
     }
   ],
