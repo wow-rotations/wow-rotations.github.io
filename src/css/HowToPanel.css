@@ -4,9 +4,11 @@
 }
 
 .image-small {
-    max-width: 80vw;
-    max-height: 80vh;
-    cursor:pointer
+    max-width: 40vw;
+    max-height: 40vh;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 30px;
 }
 
 .image-dialog {
@@ -36,4 +38,15 @@
     padding: 0 5vw;
     background-color: #1c1c1c;
     color: #999999;
+}
+
+.HowToTextSection {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    /*text-align: center;*/
+}
+
+.ImageContainer{
+    /*text-align: center;*/
 }

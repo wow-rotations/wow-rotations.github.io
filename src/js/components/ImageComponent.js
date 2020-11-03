@@ -9,7 +9,7 @@ export default class ImageComponent extends React.Component {
     };
 
     render() {
-        return <div>
+        return <div className={"ImageContainer"}>
             <img
                 className="image-small"
                 src={this.props.src}
