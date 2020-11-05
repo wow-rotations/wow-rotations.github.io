@@ -32,10 +32,9 @@ export default class ClassProfileButton extends React.Component {
 
     render_version = () => {
         if (this.state.showLastModified) {
-            let lastModifiedMoment = moment(Date.parse(this.props.classProfile.lastModified))
             return <div>
                 <div className={"contextLabel"}>Last Modified</div>
-                {lastModifiedMoment.format("DDMMYYYY")}
+                {this.props.classProfile.lastModified}
             </div>
         }
         return <div>
@@ -51,8 +50,6 @@ export default class ClassProfileButton extends React.Component {
     }
 
     renderButton = () => {
-        let lastModifiedMoment = moment(Date.parse(this.props.classProfile.lastModified))
-        lastModifiedMoment.format("DDMMYYYY")
         return <div className={"profileButton"}>
             <div className={"version"}
                  onMouseEnter={() => this.show_lastModified(false)}

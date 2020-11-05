@@ -41,7 +41,6 @@ export default class WowRotations extends React.Component {
                 type: 'GET',
                 url: '/src/static/TmwProfiles/' + this.state.selectedClass.key + '/rotation.json',
                 success: function (data, textStatus, request) {
-                    data.lastModified = request.getResponseHeader("last-modified")
                     self.setState({
                         selectedClassProfile: data,
                     })
