@@ -12,10 +12,13 @@ export default class HowToPanel extends React.Component {
     render() {
         return <div className={"HowToPanel"}>
             <div className={"HowToInnerPanel"}>
-                <h1>How To Use These Profiles</h1>
+                <h2>Feedback / Help</h2>
+                <TextSection>
+                    <a href={"https://discord.gg/2Mq2KAYfdR"}>Discord</a>
+                </TextSection>
                 <hr/>
-                <div>
-                    <h2>Install TellMeWhen</h2>
+                <h2>Install TellMeWhen</h2>
+                <TextSection>
                     <div>
                         <a href={"https://www.wowinterface.com/downloads/info10855-TellMeWhen.html"}>WoW Interface</a>
                     </div>
@@ -25,13 +28,15 @@ export default class HowToPanel extends React.Component {
                     <div>
                         <a href={"https://github.com/ascott18/TellMeWhen"}>GitHub</a>
                     </div>
-                </div>
+                </TextSection>
                 <hr/>
-                <h2>Import into TMW</h2>
+                <h2>Copy a Profile</h2>
                 <TextSection>
                     Select a class above, click the clipboard button to copy the profile to your clipboard and follow
                     these steps if you are new to TellMeWhen (TMW)
                 </TextSection>
+                <hr/>
+                <h2>Import into TMW</h2>
                 <TextSection>
                     This is what your UI will look like when you have just installed TMW or if you use the /tmw command
                 </TextSection>
